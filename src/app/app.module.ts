@@ -15,13 +15,9 @@ import { ValidEmailDirective } from './valid-email.directive';
 import { AppRoutingModule } from './app-routing.module';
 
 import { HttpClientModule } from '@angular/common/http';
-
-
-// import { RouterModule, Routes } from '@angular/router'
-// const routes: Routes = [
-//   {path:'home',component:AppComponent},
-//   {path:'',redirectTo:'/home',pathMatch:'full'},
-// ];
+import { ButtonUserComponent } from './button-user/button-user.component';
+import { ButtonBookComponent } from './button-book/button-book.component';
+import {MatTableModule} from '@angular/material/table'
 
 @NgModule({
   declarations: [
@@ -32,7 +28,9 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     MainComponent,
     SignUpComponent,
-    ValidEmailDirective
+    ValidEmailDirective,
+    ButtonUserComponent,
+    ButtonBookComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

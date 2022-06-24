@@ -1,7 +1,6 @@
 import { AbstractControl } from '@angular/forms';
 
 export function ValidatePassword(control: AbstractControl) {
-    console.log("jncjdn")
     const pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$";
   if (control.value.match(pattern)) 
   {
@@ -9,6 +8,7 @@ export function ValidatePassword(control: AbstractControl) {
   }
   else
   {
+    return null;
     return { invalidPassword: true };
   }
 }

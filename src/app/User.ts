@@ -4,8 +4,12 @@ constructor(
     public firstName: string,
     public lastName: string,
     public email: string,
-    public mobile: number,
-    public address: string,
+    public mobile: string,
+    public address: {
+        "city":string,
+        "state":string,
+        "flaNo":number
+    },
     public password: string,
 ) {  }
 
