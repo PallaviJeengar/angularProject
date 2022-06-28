@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
 
+  arr=[1,2,3]
   loginComponent=false;
   signUpComponent=false;
   main=true;
